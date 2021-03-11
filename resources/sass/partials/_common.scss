@@ -1,0 +1,38 @@
+* {
+  margin : 0px;
+  padding : 0px;
+  box-sizing : border-box;
+}
+@mixin macroSectionWidth {
+  width : 100vw;
+  max-width : 100%;
+}
+@mixin sectionPageCenter {
+  margin : 0 auto;
+  width : 1200px;
+  min-width: 1000px;
+}
+
+@mixin clearFix {
+  content : '';
+  display : table;
+  clear : both;
+}
+
+@mixin footTitle {
+  color : #828a97;
+  font-size : 18px;
+  line-height : 40px;
+  text-transform : uppercase;
+}
+
+/*>>>>>>>>>>>>>>>STYLE<<<<<<<<<<<<<*/
+ul {
+  list-style : none;
+}
+
+a {
+  text-decoration : none;
+}
+
+$font-gray : #969da8;

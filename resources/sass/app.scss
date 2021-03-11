@@ -1,1 +1,103 @@
-//
+@import "partials/_common";
+
+#app {
+  header {
+    @include macroSectionWidth;
+    height : 200px;
+    padding-top : 5px; 
+    @include sectionPageCenter;
+    .logo {
+      width : 250px;
+      margin: 0 auto;
+      img {
+        width : 100%;
+      }
+    }
+    nav {
+      display : flex;
+      justify-content: center;
+      ul {
+       display: flex;
+        li {
+          margin-right : 20px;
+          padding : 15px;
+          a {
+            color : black;
+          }
+          &:hover {
+            background-color : #bce4f9;
+          }
+        }
+      }
+    }//end nav
+  }//end header
+  main {
+    @include macroSectionWidth;
+    background-image : url('/img/bg.jpg');
+    background-position: center;
+    padding-top: 50px;
+    #HOME {
+     @include sectionPageCenter;
+      @include clearFix;
+      .pastaType {
+        text-transform : uppercase;
+        color : #05206c;
+      }
+      .section {
+        @include clearFix;
+        .box {
+          float : left;
+          margin-right : 15px;
+          width : 380px;
+          height : 240px;
+          img {
+            width : 100%;
+          }
+        }
+      }
+    }//end home
+  }//end main
+  footer {
+    @include macroSectionWidth;
+    padding-top : 30px;
+    .foot-wrapper {
+      @include sectionPageCenter;
+      display : flex;
+      justify-content: space-between;
+      .foot-left {
+        .logo {
+          width : 200px;
+          img {
+            width : 100%;
+          }
+        }
+        ul li {
+          font-size : 15px;
+          color : $font-gray;
+        }
+      }
+      .foot-box-list {
+        width : 30%;
+        .service-title {
+          @include footTitle;
+        }
+        ul {
+          margin-bottom : 30px;
+          li {
+            line-height : 20px;
+            font-size : 15px;
+            a {
+              color : $font-gray;
+            }
+          }
+        }
+      }
+    }//end foot-wrapper
+    .bottom-img {
+      width: 100%;
+      img{
+        width:100%;
+      }
+    }
+  }//end footer
+}//end app

@@ -1,1 +1,128 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
 
+/*>>>>>>>>>>>>>>>STYLE<<<<<<<<<<<<<*/
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+#app header {
+  width: 100vw;
+  max-width: 100%;
+  height: 200px;
+  padding-top: 5px;
+  margin: 0 auto;
+  width: 1200px;
+  min-width: 1000px;
+}
+#app header .logo {
+  width: 250px;
+  margin: 0 auto;
+}
+#app header .logo img {
+  width: 100%;
+}
+#app header nav {
+  display: flex;
+  justify-content: center;
+}
+#app header nav ul {
+  display: flex;
+}
+#app header nav ul li {
+  margin-right: 20px;
+  padding: 15px;
+}
+#app header nav ul li a {
+  color: black;
+}
+#app header nav ul li:hover {
+  background-color: #bce4f9;
+}
+#app main {
+  width: 100vw;
+  max-width: 100%;
+  background-image: url("/img/bg.jpg");
+  background-position: center;
+  padding-top: 50px;
+}
+#app main #HOME {
+  margin: 0 auto;
+  width: 1200px;
+  min-width: 1000px;
+  content: "";
+  display: table;
+  clear: both;
+}
+#app main #HOME .pastaType {
+  text-transform: uppercase;
+  color: #05206c;
+}
+#app main #HOME .section {
+  content: "";
+  display: table;
+  clear: both;
+}
+#app main #HOME .section .box {
+  float: left;
+  margin-right: 15px;
+  width: 380px;
+  height: 240px;
+}
+#app main #HOME .section .box img {
+  width: 100%;
+}
+#app footer {
+  width: 100vw;
+  max-width: 100%;
+  padding-top: 30px;
+}
+#app footer .foot-wrapper {
+  margin: 0 auto;
+  width: 1200px;
+  min-width: 1000px;
+  display: flex;
+  justify-content: space-between;
+}
+#app footer .foot-wrapper .foot-left .logo {
+  width: 200px;
+}
+#app footer .foot-wrapper .foot-left .logo img {
+  width: 100%;
+}
+#app footer .foot-wrapper .foot-left ul li {
+  font-size: 15px;
+  color: #969da8;
+}
+#app footer .foot-wrapper .foot-box-list {
+  width: 30%;
+}
+#app footer .foot-wrapper .foot-box-list .service-title {
+  color: #828a97;
+  font-size: 18px;
+  line-height: 40px;
+  text-transform: uppercase;
+}
+#app footer .foot-wrapper .foot-box-list ul {
+  margin-bottom: 30px;
+}
+#app footer .foot-wrapper .foot-box-list ul li {
+  line-height: 20px;
+  font-size: 15px;
+}
+#app footer .foot-wrapper .foot-box-list ul li a {
+  color: #969da8;
+}
+#app footer .bottom-img {
+  width: 100%;
+}
+#app footer .bottom-img img {
+  width: 100%;
+}
