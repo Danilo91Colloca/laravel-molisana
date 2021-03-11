@@ -1,4 +1,5 @@
 @import "partials/_common";
+@import "partials/_mainSections";
 
 #app {
   header {
@@ -31,32 +32,12 @@
       }
     }//end nav
   }//end header
-  main {
-    @include macroSectionWidth;
-    background-image : url('/img/bg.jpg');
-    background-position: center;
-    padding-top: 50px;
-    #HOME {
-     @include sectionPageCenter;
-      @include clearFix;
-      .pastaType {
-        text-transform : uppercase;
-        color : #05206c;
-      }
-      .section {
-        @include clearFix;
-        .box {
-          float : left;
-          margin-right : 15px;
-          width : 380px;
-          height : 240px;
-          img {
-            width : 100%;
-          }
-        }
-      }
-    }//end home
-  }//end main
+  .main-home {
+    @include main-home;
+  }//end main-home
+  .main-product {
+    @include main-product;
+  }
   footer {
     @include macroSectionWidth;
     padding-top : 30px;

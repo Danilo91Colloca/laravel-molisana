@@ -123,6 +123,7 @@
   ]';
 
   $array = json_decode($data, true);
+  
 @endphp
 
 <!DOCTYPE html>
@@ -160,54 +161,26 @@
             </ul>
           </nav>
         </header>
-        <main class="main-home">
-          <div id="HOME">
-            <div class="pastaType">
-              <span>le lunghe</span>
-            </div>
-            <div class="section lunga">
-              @foreach ($array as $key=>$value)
-                @if($value['tipo'] == 'lunga')
-                  <div class="box leLunghe-product">
-                    <a href="/product/{{ $key }}">
-                      <img src={{ $value['src'] }} alt="">
-                    </a>
-                  </div>
-                @endif
-              @endforeach
-            </div>
-            <div class="pastaType">
-              <span>le corte</span>
-            </div>
-            <div class="section corta">
-              @foreach ($array as $key=>$value)
-                @if($value['tipo'] == 'corta')
-                  <div class="box leCorte-product">
-                    <a href="/product/{{ $key }}">
-                      <img src={{ $value['src'] }} alt="">
-                    </a>
-                  </div>
-                @endif
-              @endforeach
-            </div>
-
-            <div class="pastaType">
-              <span>le cortissime</span>
-            </div>
-            <div class="section cortissima">
-              @foreach ($array as $key=>$value)
-                @if($value['tipo'] == 'cortissima')
-                  <div class="box leLunghe-product">
-                    <a href="/product/{{ $key }}">
-                      <img src={{ $value['src'] }} alt="">
-                    </a>
-                  </div>
-                @endif
-              @endforeach
-            </div>
-          </div>
+        <main class="main-product">
+          @foreach ($array as $key => $value )
+            @if ($idPasta == $key)
+                
+              <div class="product-title">
+                <span>{{ $value['titolo'] }}</span>
+              </div>
+              <div class="images-box">
+                
+                  <img src={{ $value['src-h'] }} alt="">
+                
+                  <img src={{ $value['src-p'] }} alt="">
+                
+              </div>
+              <div class="product-description">
+                <p>{{ $value['descrizione'] }}</p>
+              </div>
+            @endif
+          @endforeach
         </main>
-
         <footer>
           <div class="foot-wrapper">
             <div class="foot-left">
@@ -343,6 +316,5 @@
           </div>
         </footer>
       </div>
-      
     </body>
 </html>

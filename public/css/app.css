@@ -46,14 +46,14 @@ a {
 #app header nav ul li:hover {
   background-color: #bce4f9;
 }
-#app main {
+#app .main-home {
   width: 100vw;
   max-width: 100%;
   background-image: url("/img/bg.jpg");
   background-position: center;
   padding-top: 50px;
 }
-#app main #HOME {
+#app .main-home #HOME {
   margin: 0 auto;
   width: 1200px;
   min-width: 1000px;
@@ -61,23 +61,47 @@ a {
   display: table;
   clear: both;
 }
-#app main #HOME .pastaType {
+#app .main-home #HOME .pastaType {
   text-transform: uppercase;
   color: #05206c;
 }
-#app main #HOME .section {
+#app .main-home #HOME .section {
   content: "";
   display: table;
   clear: both;
 }
-#app main #HOME .section .box {
+#app .main-home #HOME .section .box {
   float: left;
   margin-right: 15px;
   width: 380px;
   height: 240px;
 }
-#app main #HOME .section .box img {
+#app .main-home #HOME .section .box img {
   width: 100%;
+}
+#app .main-product {
+  position: relative;
+}
+#app .main-product .product-title {
+  position: absolute;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  color: #05206c;
+}
+#app .main-product .images-box {
+  display: flex;
+  flex-direction: column;
+}
+#app .main-product .product-description {
+  padding: 20px 0px;
+  background-color: #bdd9e4;
+  color: #05206c;
+}
+#app .main-product .product-description p {
+  margin: 0 auto;
+  width: 1200px;
+  min-width: 1000px;
 }
 #app footer {
   width: 100vw;

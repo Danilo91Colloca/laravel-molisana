@@ -1,0 +1,51 @@
+@mixin main-home {
+@include macroSectionWidth;
+  background-image : url('/img/bg.jpg');
+  background-position: center;
+  padding-top: 50px;
+  #HOME {
+    @include sectionPageCenter;
+    @include clearFix;
+    .pastaType {
+      text-transform : uppercase;
+      color : $font-blue;
+    }
+    .section {
+      @include clearFix;
+      .box {
+        float : left;
+        margin-right : 15px;
+        width : 380px;
+        height : 240px;
+        img {
+          width : 100%;
+        }
+      }
+    }
+  }
+};
+
+@mixin main-product {
+  position: relative;
+  .product-title {
+    position : absolute;
+    top : 20px;
+    left : 50%;
+    transform : translateX(-50%);
+    color : $font-blue;
+  }
+  .images-box {
+    display : flex;
+    flex-direction: column;
+  }
+  .product-description {
+    padding : 20px 0px;
+    background-color: $bg-color-product;
+    color : $font-blue;
+    p {
+      @include sectionPageCenter;
+    }
+  }
+
+  
+}
