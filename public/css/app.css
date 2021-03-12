@@ -91,6 +91,9 @@ a {
   display: flex;
   align-items: center;
   justify-content: center;
+  color: rgba(255, 255, 255, 0.37);
+}
+#app .main-container .main-productDetails .chevron-left:hover {
   color: #fff;
 }
 #app .main-container .main-productDetails .chevron-right {
@@ -103,6 +106,9 @@ a {
   display: flex;
   align-items: center;
   justify-content: center;
+  color: rgba(255, 255, 255, 0.37);
+}
+#app .main-container .main-productDetails .chevron-right:hover {
   color: #fff;
 }
 #app .main-container .main-productDetails .product-title {

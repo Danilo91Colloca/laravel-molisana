@@ -39,7 +39,10 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    color : #fff;
+    color : rgba(255, 255, 255, 0.37);
+    &:hover {
+      color : #fff;
+    }
   }
   .chevron-right {
     position : absolute;
@@ -51,7 +54,10 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    color : #fff;
+    color : rgba(255, 255, 255, 0.37);
+    &:hover {
+      color : #fff;
+    }
   }
   .product-title {
     position : absolute;

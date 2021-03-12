@@ -49,3 +49,4 @@ Route::get('/pages/productDetails/{id?}', function ($id=null) {
 Route::get("/pages/news", function(){
   return view("/pages/news");
 }); 
+
