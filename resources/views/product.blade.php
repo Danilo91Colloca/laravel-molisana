@@ -176,7 +176,7 @@
                 
               </div>
               <div class="product-description">
-                <p>{{ $value['descrizione'] }}</p>
+                <p>{!! nl2br($value['descrizione']) !!}</p>
               </div>
             @endif
           @endforeach
