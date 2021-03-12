@@ -1,5 +1,8 @@
+@mixin main-home {
+
+}
 @mixin main-products {
-@include macroSectionWidth;
+  @include macroSectionWidth;
   background-image : url('/img/bg.jpg');
   background-position: center;
   padding-top: 50px;
@@ -27,6 +30,29 @@
 
 @mixin main-productDetails {
   position: relative;
+  .chevron-left {
+    position : absolute;
+    height : 100%;
+    width : 150px;
+    background-color: rgba(0, 217, 255, 0.15);
+    font-size: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color : #fff;
+  }
+  .chevron-right {
+    position : absolute;
+    right : 0px;
+    height : 100%;
+    width : 150px;
+    background-color: rgba(0, 217, 255, 0.15);
+    font-size: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color : #fff;
+  }
   .product-title {
     position : absolute;
     top : 20px;
@@ -46,6 +72,4 @@
       @include sectionPageCenter;
     }
   }
-
-  
-}
+} //main-productDetails

@@ -82,6 +82,29 @@ a {
 #app .main-container .main-productDetails {
   position: relative;
 }
+#app .main-container .main-productDetails .chevron-left {
+  position: absolute;
+  height: 100%;
+  width: 150px;
+  background-color: rgba(0, 217, 255, 0.15);
+  font-size: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+}
+#app .main-container .main-productDetails .chevron-right {
+  position: absolute;
+  right: 0px;
+  height: 100%;
+  width: 150px;
+  background-color: rgba(0, 217, 255, 0.15);
+  font-size: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+}
 #app .main-container .main-productDetails .product-title {
   position: absolute;
   top: 20px;
