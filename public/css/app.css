@@ -13,40 +13,74 @@ a {
   text-decoration: none;
 }
 
+/*>>>>>>>>>>>>>>>LARGE SECTION<<<<<<<<<<<<<<<<<<<<<<*/
+/*>>>>>>>>>>>>>>>MEDIUM SECTION<<<<<<<<<<<<<<<<<<<<<<*/
+/*>>>>>>>>>>>>>>>SMALL SECTION<<<<<<<<<<<<<<<<<<<<<<*/
+#app {
+  width: 100%;
+}
 #app header {
   width: 100vw;
   max-width: 100%;
   height: 200px;
-  padding-top: 5px;
+  padding: 5px 15px 0px 15px;
+}
+#app header .header-container {
   margin: 0 auto;
   width: 1200px;
-  min-width: 1000px;
+  min-width: 1200px;
 }
-#app header .logo {
+@media screen and (max-width: 1199px) {
+  #app header .header-container {
+    margin: 0 auto;
+    width: 992px;
+    max-width: 100%;
+    min-width: 992px;
+  }
+}
+@media screen and (max-width: 991px) {
+  #app header .header-container {
+    margin: 0 auto;
+    max-width: 100%;
+    width: 768px;
+    min-width: 768px;
+  }
+}
+@media screen and (max-width: 767px) {
+  #app header .header-container {
+    margin: 0 auto;
+    width: 577px;
+    max-width: 100%;
+    min-width: 577px;
+  }
+}
+#app header .header-container .logo {
   width: 250px;
   margin: 0 auto;
 }
-#app header .logo img {
+#app header .header-container .logo img {
   width: 100%;
 }
-#app header nav {
+#app header .header-container nav {
   display: flex;
   justify-content: center;
 }
-#app header nav ul {
+#app header .header-container nav ul {
   display: flex;
 }
-#app header nav ul li {
+#app header .header-container nav ul li {
   margin-right: 20px;
   padding: 15px;
 }
-#app header nav ul li a {
+#app header .header-container nav ul li a {
   color: black;
 }
-#app header nav ul li:hover {
+#app header .header-container nav ul li:hover {
   background-color: #bce4f9;
 }
 #app .main-container .main-products {
+  display: flex;
+  justify-content: center;
   width: 100vw;
   max-width: 100%;
   background-image: url("/img/bg.jpg");
@@ -56,25 +90,61 @@ a {
 #app .main-container .main-products .all-products-container {
   margin: 0 auto;
   width: 1200px;
-  min-width: 1000px;
+  min-width: 1200px;
   content: "";
   display: table;
   clear: both;
+  margin-bottom: 20px;
+}
+@media screen and (max-width: 1199px) {
+  #app .main-container .main-products .all-products-container {
+    margin: 0 auto;
+    width: 992px;
+    max-width: 100%;
+    min-width: 992px;
+  }
+}
+@media screen and (max-width: 991px) {
+  #app .main-container .main-products .all-products-container {
+    margin: 0 auto;
+    max-width: 100%;
+    width: 768px;
+    min-width: 768px;
+  }
+}
+@media screen and (max-width: 767px) {
+  #app .main-container .main-products .all-products-container {
+    margin: 0 auto;
+    width: 577px;
+    max-width: 100%;
+    min-width: 577px;
+  }
 }
 #app .main-container .main-products .all-products-container .pastaType {
   text-transform: uppercase;
   color: #05206c;
+  padding-left: 15px;
 }
 #app .main-container .main-products .all-products-container .section {
   content: "";
   display: table;
   clear: both;
+  width: 100%;
 }
 #app .main-container .main-products .all-products-container .section .box {
+  padding: 15px;
   float: left;
-  margin-right: 15px;
-  width: 380px;
-  height: 240px;
+  width: calc((100% / 12) * 4);
+}
+@media screen and (max-width: 1199px) {
+  #app .main-container .main-products .all-products-container .section .box {
+    width: calc((100% / 12) * 6);
+  }
+}
+@media screen and (max-width: 767px) {
+  #app .main-container .main-products .all-products-container .section .box {
+    width: calc((100% / 12) * 12);
+  }
 }
 #app .main-container .main-products .all-products-container .section .box img {
   width: 100%;
@@ -130,7 +200,7 @@ a {
 #app .main-container .main-productDetails .product-description p {
   margin: 0 auto;
   width: 1200px;
-  min-width: 1000px;
+  min-width: 1200px;
 }
 #app footer {
   width: 100vw;
@@ -138,11 +208,36 @@ a {
   padding-top: 30px;
 }
 #app footer .foot-wrapper {
+  padding: 0px 15px 0px 15px;
   margin: 0 auto;
   width: 1200px;
-  min-width: 1000px;
+  min-width: 1200px;
   display: flex;
   justify-content: space-between;
+}
+@media screen and (max-width: 1199px) {
+  #app footer .foot-wrapper {
+    margin: 0 auto;
+    width: 992px;
+    max-width: 100%;
+    min-width: 992px;
+  }
+}
+@media screen and (max-width: 991px) {
+  #app footer .foot-wrapper {
+    margin: 0 auto;
+    max-width: 100%;
+    width: 768px;
+    min-width: 768px;
+  }
+}
+@media screen and (max-width: 767px) {
+  #app footer .foot-wrapper {
+    margin: 0 auto;
+    width: 577px;
+    max-width: 100%;
+    min-width: 577px;
+  }
 }
 #app footer .foot-wrapper .foot-left .logo {
   width: 200px;
@@ -175,6 +270,7 @@ a {
 }
 #app footer .bottom-img {
   width: 100%;
+  min-width: 577px;
 }
 #app footer .bottom-img img {
   width: 100%;

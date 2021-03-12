@@ -10,7 +10,7 @@
 @mixin sectionPageCenter {
   margin : 0 auto;
   width : 1200px;
-  min-width: 1000px;
+  min-width: 1200px;
 }
 
 @mixin clearFix {
@@ -38,3 +38,16 @@ a {
 $font-gray : #969da8;
 $font-blue : #05206c;
 $bg-color-product : #bdd9e4;
+
+
+
+
+
+@media screen and (max-width: 1199px){
+  @mixin sectionPageCenter {
+    margin : 0 auto;
+    width : 992px;
+    min-width: 992px;
+    background-color: red;
+  }
+}

@@ -13,28 +13,32 @@
     <body>
       <div id="app">
         <header>
-          <div class="logo">
-            <img src= {{ url ('/img/brand.png') }} alt="">
+          <div class="header-container">
+            <div class="logo">
+              <img src= {{ url ('/img/brand.png') }} alt="">
+            </div>
+            
+            <nav>
+              <ul>
+                <li>
+                  <a href="/pages/home">
+                    Home
+                  </a>
+                </li>
+                <li>
+                  <a href="/pages/products">
+                    Prodotti
+                  </a>
+                </li>
+                <li>
+                  <a href="/pages/news">
+                    News
+                  </a>
+                </li>
+              </ul>
+            </nav>
           </div>
-          <nav>
-            <ul>
-              <li>
-                <a href="/pages/home">
-                  Home
-                </a>
-              </li>
-              <li>
-                <a href="/pages/products">
-                  Prodotti
-                </a>
-              </li>
-              <li>
-                <a href="/pages/news">
-                  News
-                </a>
-              </li>
-            </ul>
-          </nav>
+          
         </header>
         <div class="main-container">
           @yield('main')

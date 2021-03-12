@@ -5,21 +5,28 @@
   @include macroSectionWidth;
   background-image : url('/img/bg.jpg');
   background-position: center;
-  padding-top: 50px;
+  padding-top : 50px;
   .all-products-container {
     @include sectionPageCenter;
+    @include large-sectionPageCenter;
+    @include medium-sectionPageCenter;
+    @include small-sectionPageCenter;
     @include clearFix;
+    margin-bottom: 20px;
     .pastaType {
       text-transform : uppercase;
       color : $font-blue;
+      padding-left : 15px;
     }
     .section {
       @include clearFix;
+      width: 100%;
       .box {
+        @include medium-boxResize;
+        @include small-boxResize;
+        padding: 15px;
         float : left;
-        margin-right : 15px;
-        width : 380px;
-        height : 240px;
+        width : calc((100% / 12) * 4);
         img {
           width : 100%;
         }

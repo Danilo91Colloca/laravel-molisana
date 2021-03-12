@@ -3,11 +3,16 @@
 @import "partials/_responsive";
 
 #app {
+  width : 100%;
   header {
     @include macroSectionWidth;
     height : 200px;
-    padding-top : 5px; 
+    padding : 5px 15px 0px 15px; 
+    .header-container {
     @include sectionPageCenter;
+    @include large-sectionPageCenter;
+    @include medium-sectionPageCenter;
+    @include small-sectionPageCenter;
     .logo {
       width : 250px;
       margin: 0 auto;
@@ -32,6 +37,8 @@
         }
       }
     }//end nav
+    }
+    
   }//end header
   .main-container {
     
@@ -39,6 +46,8 @@
       @include main-home;
     }
     .main-products {
+      display: flex; 
+      justify-content: center;
       @include main-products;
     }//end main-home
     .main-productDetails {
@@ -48,11 +57,16 @@
   footer {
     @include macroSectionWidth;
     padding-top : 30px;
-    .foot-wrapper {
+    .foot-wrapper { 
+      padding : 0px 15px 0px 15px;
       @include sectionPageCenter;
+      @include large-sectionPageCenter;
+      @include medium-sectionPageCenter;
+      @include small-sectionPageCenter;
       display : flex;
       justify-content: space-between;
       .foot-left {
+       
         .logo {
           width : 200px;
           img {
@@ -82,9 +96,10 @@
       }
     }//end foot-wrapper
     .bottom-img {
-      width: 100%;
+      width : 100%;
+      min-width : 577px; 
       img{
-        width:100%;
+        width : 100%;
       }
     }
   }//end footer

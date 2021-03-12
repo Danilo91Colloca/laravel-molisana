@@ -1,0 +1,81 @@
+
+/*>>>>>>>>>>>>>>>LARGE SECTION<<<<<<<<<<<<<<<<<<<<<<*/
+
+//mediaquery for pasrtials _common
+@mixin large-sectionPageCenter {
+  @media screen and (max-width: 1199px){
+    margin : 0 auto;
+    width : 992px;
+    max-width: 100%;
+    min-width: 992px;
+  }
+}
+@mixin medium-sectionPageCenter {
+  @media screen and (max-width: 991px){
+    margin : 0 auto;
+    max-width: 100%;
+    width : 768px;
+    min-width: 768px;
+  }
+}
+@mixin small-sectionPageCenter {
+  @media screen and (max-width: 767px){
+    margin : 0 auto;
+    width : 577px;
+    max-width: 100%;
+    min-width: 577px;
+  }
+}
+
+
+
+
+//mediaquery layoutMaster
+// @mixin header-largeScreen {
+//   @media screen and (max-width: 1199px){
+
+//   }
+// }
+
+
+
+
+
+
+/*>>>>>>>>>>>>>>>MEDIUM SECTION<<<<<<<<<<<<<<<<<<<<<<*/
+
+
+//mediaquery main-products
+@mixin medium-boxResize {
+  @media screen and (max-width: 1199px) {
+    width : calc((100% / 12) * 6); 
+  }
+}
+
+
+
+
+
+
+
+
+/*>>>>>>>>>>>>>>>SMALL SECTION<<<<<<<<<<<<<<<<<<<<<<*/
+
+
+//mediaquery main-products
+@mixin small-boxResize {
+  @media screen and (max-width: 767px) {
+    width : calc((100% / 12) * 12); 
+  }
+}
+
+
+
+
+
+
+
+
+@media screen and (max-width: 1199px) {}
+@media screen and (max-width: 991px) {}
+@media screen and (max-width: 767px) {}
