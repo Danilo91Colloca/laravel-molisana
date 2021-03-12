@@ -28,32 +28,18 @@
 }
 
 
-
-
-//mediaquery layoutMaster
-// @mixin header-largeScreen {
-//   @media screen and (max-width: 1199px){
-
-//   }
-// }
-
-
-
-
-
-
 /*>>>>>>>>>>>>>>>MEDIUM SECTION<<<<<<<<<<<<<<<<<<<<<<*/
 
 
 //mediaquery main-products
 @mixin medium-boxResize {
-  @media screen and (max-width: 1199px) {
+  @media screen and (max-width: 991px) {
     width : calc((100% / 12) * 6); 
   }
 }
 
 
-//mediaquery liste footer 
+//mediaquery liste footer sovrapposte
 @mixin medium-listefooter-column {
   @media screen and (max-width: 991px) {
     flex-direction : column;
@@ -62,8 +48,31 @@
 
 
 
-
-
+@mixin medium-hidden {
+  @media screen and (max-width: 991px) {
+    display: none;
+  }
+}
+@mixin medium-visible-flex {
+  @media screen and (max-width: 991px) {
+    display: flex;
+    justify-content: center;
+  }
+}
+@mixin medium-navFlexColumn {
+  @media screen and (max-width: 991px) {
+    margin-top: 20px;
+    display : flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 2px -3px 3px black;
+    z-index: 100;
+    width:50%;
+  }
+}
 
 /*>>>>>>>>>>>>>>>SMALL SECTION<<<<<<<<<<<<<<<<<<<<<<*/
 
@@ -77,7 +86,7 @@
 
 
 
-//mediaquery liste footer 
+//LAYOUTMASTER mediaquery title liste footer 
 @mixin small-serviceTitle-fontResize {
   @media screen and (max-width: 767px) {
     font-size: 15px;

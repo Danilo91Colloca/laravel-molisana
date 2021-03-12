@@ -61,12 +61,56 @@ a {
 #app header .header-container .logo img {
   width: 100%;
 }
+#app header .header-container .burger-menu {
+  display: none;
+}
+@media screen and (max-width: 991px) {
+  #app header .header-container .burger-menu {
+    display: flex;
+    justify-content: center;
+  }
+}
+#app header .header-container .burger-menu:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+}
+@media screen and (max-width: 991px) {
+  #app header .header-container .burger-menu:hover ~ nav {
+    display: flex;
+    justify-content: center;
+  }
+}
 #app header .header-container nav {
   display: flex;
   justify-content: center;
 }
+@media screen and (max-width: 991px) {
+  #app header .header-container nav {
+    display: none;
+  }
+}
+@media screen and (max-width: 991px) {
+  #app header .header-container nav:hover {
+    display: flex;
+    justify-content: center;
+  }
+}
 #app header .header-container nav ul {
   display: flex;
+}
+@media screen and (max-width: 991px) {
+  #app header .header-container nav ul {
+    margin-top: 20px;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 2px -3px 3px black;
+    z-index: 100;
+    width: 50%;
+  }
 }
 #app header .header-container nav ul li {
   margin-right: 20px;
@@ -136,7 +180,7 @@ a {
   float: left;
   width: calc((100% / 12) * 4);
 }
-@media screen and (max-width: 1199px) {
+@media screen and (max-width: 991px) {
   #app .main-container .main-products .all-products-container .section .box {
     width: calc((100% / 12) * 6);
   }

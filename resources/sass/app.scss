@@ -20,11 +20,27 @@
         width : 100%;
       }
     }
+    .burger-menu {
+      display : none;
+      @include medium-visible-flex; 
+      &:hover {
+        cursor: pointer;
+        transform: scale(1.1);
+      }
+      &:hover ~ nav {
+        @include medium-visible-flex;
+      }
+    }
     nav {
+      @include medium-hidden;
       display : flex;
       justify-content: center;
+      &:hover {
+        @include medium-visible-flex;
+      }
       ul {
        display: flex;
+       @include medium-navFlexColumn; 
         li {
           margin-right : 20px;
           padding : 15px;

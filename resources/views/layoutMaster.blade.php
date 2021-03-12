@@ -17,7 +17,9 @@
             <div class="logo">
               <img src= {{ url ('/img/brand.png') }} alt="">
             </div>
-            
+            <div class="burger-menu">
+              <i class="fas fa-bars"></i>
+            </div>
             <nav>
               <ul>
                 <li>
