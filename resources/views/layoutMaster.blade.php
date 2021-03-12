@@ -16,17 +16,17 @@
           <nav>
             <ul>
               <li>
-                <a href="/home">
+                <a href="/pages/home">
                   Home
                 </a>
               </li>
               <li>
-                <a href="/products">
+                <a href="/pages/products">
                   Prodotti
                 </a>
               </li>
               <li>
-                <a href="">
+                <a href="/pages/news">
                   News
                 </a>
               </li>

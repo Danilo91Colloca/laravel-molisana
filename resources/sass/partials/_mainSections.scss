@@ -1,4 +1,4 @@
-@mixin main-home {
+@mixin main-products {
 @include macroSectionWidth;
   background-image : url('/img/bg.jpg');
   background-position: center;
@@ -25,7 +25,7 @@
   }//end all-products-container
 };
 
-@mixin main-product {
+@mixin main-productDetails {
   position: relative;
   .product-title {
     position : absolute;

@@ -1,6 +1,6 @@
 @extends('layoutMaster')
 @section('main')
-  <main class="main-home">
+  <main class="main-products">
     <div class="all-products-container">
       <div class="pastaType">
         <span>le lunghe</span>
@@ -9,7 +9,7 @@
         @foreach ($pastaArray as $key=>$value)
           @if($value['tipo'] == 'lunga')
             <div class="box leLunghe-product">
-              <a href="/productDetails/{{ $key + 1 }}">
+              <a href="/pages/productDetails/{{ $key + 1 }}">
                 <img src={{ $value['src'] }} alt="">
               </a>
             </div>
@@ -24,7 +24,7 @@
         @foreach ($pastaArray as $key=>$value)
           @if($value['tipo'] == 'corta')
             <div class="box leCorte-product">
-              <a href="/productDetails/{{ $key }}">
+              <a href="/pages/productDetails/{{ $key }}">
                 <img src={{ $value['src'] }} alt="">
               </a>
             </div>
@@ -40,7 +40,7 @@
         @foreach ($pastaArray as $key=>$value)
           @if($value['tipo'] == 'cortissima')
             <div class="box leLunghe-product">
-              <a href="/productDetails/{{ $key }}">
+              <a href="/pages/productDetails/{{ $key }}">
                 <img src={{ $value['src'] }} alt="">
               </a>
             </div>

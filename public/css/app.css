@@ -46,14 +46,14 @@ a {
 #app header nav ul li:hover {
   background-color: #bce4f9;
 }
-#app .main-container .main-home {
+#app .main-container .main-products {
   width: 100vw;
   max-width: 100%;
   background-image: url("/img/bg.jpg");
   background-position: center;
   padding-top: 50px;
 }
-#app .main-container .main-home .all-products-container {
+#app .main-container .main-products .all-products-container {
   margin: 0 auto;
   width: 1200px;
   min-width: 1000px;
@@ -61,44 +61,44 @@ a {
   display: table;
   clear: both;
 }
-#app .main-container .main-home .all-products-container .pastaType {
+#app .main-container .main-products .all-products-container .pastaType {
   text-transform: uppercase;
   color: #05206c;
 }
-#app .main-container .main-home .all-products-container .section {
+#app .main-container .main-products .all-products-container .section {
   content: "";
   display: table;
   clear: both;
 }
-#app .main-container .main-home .all-products-container .section .box {
+#app .main-container .main-products .all-products-container .section .box {
   float: left;
   margin-right: 15px;
   width: 380px;
   height: 240px;
 }
-#app .main-container .main-home .all-products-container .section .box img {
+#app .main-container .main-products .all-products-container .section .box img {
   width: 100%;
 }
-#app .main-container .main-product {
+#app .main-container .main-productDetails {
   position: relative;
 }
-#app .main-container .main-product .product-title {
+#app .main-container .main-productDetails .product-title {
   position: absolute;
   top: 20px;
   left: 50%;
   transform: translateX(-50%);
   color: #05206c;
 }
-#app .main-container .main-product .images-box {
+#app .main-container .main-productDetails .images-box {
   display: flex;
   flex-direction: column;
 }
-#app .main-container .main-product .product-description {
+#app .main-container .main-productDetails .product-description {
   padding: 20px 0px;
   background-color: #bdd9e4;
   color: #05206c;
 }
-#app .main-container .main-product .product-description p {
+#app .main-container .main-productDetails .product-description p {
   margin: 0 auto;
   width: 1200px;
   min-width: 1000px;

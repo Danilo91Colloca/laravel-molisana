@@ -16,31 +16,36 @@ use Illuminate\Support\Facades\Route;
 
 //se la route non è specificata reindirizza alla home
 Route::get("/", function(){
-  return redirect("/home");
+  return redirect("/pages/home");
 }); 
 
-//la route home ritorna il layout master
-Route::get("/home", function(){
-  return view("/layoutMaster");
+//la route home ritorna il template home
+Route::get("/pages/home", function(){
+  return view("/pages/home");
 }); 
+
 
 //se la route è products ritorna tutti il template products
-Route::get('/products', function(){
+Route::get('/pages/products', function(){
   $pasta = config('pasta');  
-  return view('products',[
+  return view('pages.products',[
     'pastaArray'=>$pasta
     ]);
 });
 
 //se la route è productsDetails ritorna il prodotto con lo specifico id
 //l' id sarà passato in href e sarà la key numerica dell'array
-Route::get('/productDetails/{id?}', function ($id=null) {
+Route::get('/pages/productDetails/{id?}', function ($id=null) {
   if(empty($id)) {
     return abort(404);
   };
   $pasta = config('pasta');
-  return view('productDetails', [
+  return view('pages.productDetails', [
     'idPasta' => $id - 1,
     'pastaArray' =>$pasta]);
-   
 });
+
+//la route news ritorna il template delle news
+Route::get("/pages/news", function(){
+  return view("/pages/news");
+}); 

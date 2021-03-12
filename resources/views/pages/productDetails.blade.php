@@ -1,6 +1,6 @@
 @extends('layoutMaster')
 @section('main')
-  <main class="main-product">
+  <main class="main-productDetails">
       <div class="product-title">
         <span>{{ $pastaArray[$idPasta]['titolo'] }}</span>
       </div>

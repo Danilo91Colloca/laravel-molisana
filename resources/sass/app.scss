@@ -1,5 +1,6 @@
 @import "partials/_common";
 @import "partials/_mainSections";
+@import "partials/_responsive";
 
 #app {
   header {
@@ -33,11 +34,12 @@
     }//end nav
   }//end header
   .main-container {
-    .main-home {
-      @include main-home;
+    
+    .main-products {
+      @include main-products;
     }//end main-home
-    .main-product {
-      @include main-product;
+    .main-productDetails {
+      @include main-productDetails;
     }
   }
   footer {
