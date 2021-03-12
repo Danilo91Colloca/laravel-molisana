@@ -63,10 +63,10 @@
       @include large-sectionPageCenter;
       @include medium-sectionPageCenter;
       @include small-sectionPageCenter;
+      @include medium-listefooter-column;
       display : flex;
       justify-content: space-between;
       .foot-left {
-       
         .logo {
           width : 200px;
           img {
@@ -82,6 +82,7 @@
         width : 30%;
         .service-title {
           @include footTitle;
+          @include small-serviceTitle-fontResize;
         }
         ul {
           margin-bottom : 30px;

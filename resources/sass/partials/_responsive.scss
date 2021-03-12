@@ -53,6 +53,12 @@
 }
 
 
+//mediaquery liste footer 
+@mixin medium-listefooter-column {
+  @media screen and (max-width: 991px) {
+    flex-direction : column;
+  }
+}
 
 
 
@@ -69,6 +75,14 @@
   }
 }
 
+
+
+//mediaquery liste footer 
+@mixin small-serviceTitle-fontResize {
+  @media screen and (max-width: 767px) {
+    font-size: 15px;
+  }
+}
 
 
 

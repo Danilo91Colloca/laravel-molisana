@@ -239,6 +239,11 @@ a {
     min-width: 577px;
   }
 }
+@media screen and (max-width: 991px) {
+  #app footer .foot-wrapper {
+    flex-direction: column;
+  }
+}
 #app footer .foot-wrapper .foot-left .logo {
   width: 200px;
 }
@@ -257,6 +262,11 @@ a {
   font-size: 18px;
   line-height: 40px;
   text-transform: uppercase;
+}
+@media screen and (max-width: 767px) {
+  #app footer .foot-wrapper .foot-box-list .service-title {
+    font-size: 15px;
+  }
 }
 #app footer .foot-wrapper .foot-box-list ul {
   margin-bottom: 30px;
