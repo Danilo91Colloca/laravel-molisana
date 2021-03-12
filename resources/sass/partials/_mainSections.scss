@@ -3,7 +3,7 @@
   background-image : url('/img/bg.jpg');
   background-position: center;
   padding-top: 50px;
-  #HOME {
+  .all-products-container {
     @include sectionPageCenter;
     @include clearFix;
     .pastaType {
@@ -22,7 +22,7 @@
         }
       }
     }
-  }
+  }//end all-products-container
 };
 
 @mixin main-product {

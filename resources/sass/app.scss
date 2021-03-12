@@ -32,11 +32,13 @@
       }
     }//end nav
   }//end header
-  .main-home {
-    @include main-home;
-  }//end main-home
-  .main-product {
-    @include main-product;
+  .main-container {
+    .main-home {
+      @include main-home;
+    }//end main-home
+    .main-product {
+      @include main-product;
+    }
   }
   footer {
     @include macroSectionWidth;

@@ -21,7 +21,7 @@
                 </a>
               </li>
               <li>
-                <a href="">
+                <a href="/products">
                   Prodotti
                 </a>
               </li>
@@ -33,21 +33,9 @@
             </ul>
           </nav>
         </header>
-        <main class="main-product">
-            <div class="product-title">
-              <span>{{ $pastaArray[$idPasta]['titolo'] }}</span>
-            </div>
-            <div class="images-box">
-              
-                <img src={{ $pastaArray[$idPasta]['src-h'] }} alt="">
-              
-                <img src={{ $pastaArray[$idPasta]['src-p'] }} alt="">
-              
-            </div>
-            <div class="product-description">
-              <p>{!! nl2br($pastaArray[$idPasta]['descrizione']) !!}</p>
-            </div>
-        </main>
+        <div class="main-container">
+          @yield('main')
+        </div>
         <footer>
           <div class="foot-wrapper">
             <div class="foot-left">
@@ -183,5 +171,6 @@
           </div>
         </footer>
       </div>
+      
     </body>
 </html>
