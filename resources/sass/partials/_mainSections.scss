@@ -1,6 +1,7 @@
 @mixin main-home {
 
 }
+//style of all products section
 @mixin main-products {
   @include macroSectionWidth;
   background-image : url('/img/bg.jpg');
@@ -35,36 +36,23 @@
   }//end all-products-container
 };
 
+//style of slected product and details
 @mixin main-productDetails {
   position: relative;
   .chevron-left {
-    position : absolute;
-    height : 100%;
     width : 150px;
-    background-color: rgba(0, 217, 255, 0.15);
-    font-size: 80px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color : rgba(255, 255, 255, 0.37);
-    &:hover {
-      color : #fff;
-    }
+    @include chevron;
+    @include large-chevronResize; 
+    @include medium-chevronResize;
+    @include small-chevronResize;
   }
   .chevron-right {
-    position : absolute;
     right : 0px;
-    height : 100%;
     width : 150px;
-    background-color: rgba(0, 217, 255, 0.15);
-    font-size: 80px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color : rgba(255, 255, 255, 0.37);
-    &:hover {
-      color : #fff;
-    }
+    @include chevron;
+    @include large-chevronResize; 
+    @include medium-chevronResize;
+    @include small-chevronResize;
   }
   .product-title {
     position : absolute;
@@ -77,12 +65,22 @@
     display : flex;
     flex-direction: column;
   }
-  .product-description {
+  .product-description-container {
     padding : 20px 0px;
     background-color: $bg-color-product;
     color : $font-blue;
-    p {
-      @include sectionPageCenter;
+    
+    .productDetails-content {
+      margin : 0 auto;
+      width : calc(100% - 300px);
+      @include large-sectionDetails;
+      @include medium-sectionDetails;
+      @include small-sectionDetails;
+      p {
+        @include small-detailsTextResize;
+        width: 100%;
+        padding : 15px;
+      }
     }
   }
 } //main-productDetails

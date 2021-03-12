@@ -27,7 +27,17 @@
   }
 }
 
-
+@mixin large-chevronResize {
+  @media screen and (max-width: 1199px) {
+    font-size: 40px;
+    width : 100px;
+  }
+}
+@mixin large-sectionDetails {
+  @media screen and (max-width: 1199px) {
+    width: calc(100% - 200px);
+  }
+}
 /*>>>>>>>>>>>>>>>MEDIUM SECTION<<<<<<<<<<<<<<<<<<<<<<*/
 
 
@@ -73,6 +83,19 @@
     width:50%;
   }
 }
+//resize chevron 
+@mixin medium-chevronResize {
+  @media screen and (max-width: 991px) {
+    font-size: 35px;
+    width : 80px;
+  }
+}
+
+@mixin medium-sectionDetails {
+  @media screen and (max-width: 991px) {
+    max-width: calc(100%-160px);
+  }
+}
 
 /*>>>>>>>>>>>>>>>SMALL SECTION<<<<<<<<<<<<<<<<<<<<<<*/
 
@@ -80,6 +103,7 @@
 //mediaquery main-products
 @mixin small-boxResize {
   @media screen and (max-width: 767px) {
+    
     width : calc((100% / 12) * 12); 
   }
 }
@@ -89,13 +113,32 @@
 //LAYOUTMASTER mediaquery title liste footer 
 @mixin small-serviceTitle-fontResize {
   @media screen and (max-width: 767px) {
+    min-width: 577px;
     font-size: 15px;
   }
 }
 
+//resize chevron 
+@mixin small-chevronResize {
+  @media screen and (max-width: 767px) {
+    font-size: 30px;
+    width : 45px;
+  }
+}
 
+//resize description s font text
+@mixin small-detailsTextResize {
+  @media screen and (max-width: 767px) {
+    padding: 20px;
+    font-size : 12px;
+  }
+}
 
-
+@mixin small-sectionDetails {
+  @media screen and (max-width: 767px) {
+    width : calc(100% - 90px)
+  }
+}
 
 
 

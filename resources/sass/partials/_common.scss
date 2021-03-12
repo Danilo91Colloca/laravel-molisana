@@ -26,6 +26,19 @@
   text-transform : uppercase;
 }
 
+@mixin chevron {
+  position : absolute;
+  height : 100%;
+  background-color: rgba(0, 217, 255, 0.15);
+  font-size: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color : rgba(255, 255, 255, 0.37);
+  &:hover {
+    color : #fff;
+  }
+}
 /*>>>>>>>>>>>>>>>STYLE<<<<<<<<<<<<<*/
 ul {
   list-style : none;
@@ -39,15 +52,3 @@ $font-gray : #969da8;
 $font-blue : #05206c;
 $bg-color-product : #bdd9e4;
 
-
-
-
-
-@media screen and (max-width: 1199px){
-  @mixin sectionPageCenter {
-    margin : 0 auto;
-    width : 992px;
-    min-width: 992px;
-    background-color: red;
-  }
-}

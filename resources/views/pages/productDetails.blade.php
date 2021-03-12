@@ -39,8 +39,10 @@
         <img src={{ $pastaArray[$idPasta]['src-h'] }} alt="">
         <img src={{ $pastaArray[$idPasta]['src-p'] }} alt="">
     </div>
-    <div class="product-description">
-      <p>{!! nl2br($pastaArray[$idPasta]['descrizione']) !!}</p>
+    <div class="product-description-container">
+      <div class="productDetails-content">
+        <p>{!! nl2br($pastaArray[$idPasta]['descrizione']) !!}</p>
+      </div>
     </div>
   </main>
 @endsection
