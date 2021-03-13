@@ -1,6 +1,66 @@
 @mixin main-home {
+  width : 100vw;
+  max-width : 100%;
+  height : 735px;
+  background-image : url('/img/ruota_oro.jpeg');
+  background-repeat: no-repeat;
+  background-position: center;
+  .wrapper-opacizer {
+    width : 100%;
+    height : 100%;
+    background-color : rgba(255, 255, 255, 0.561);
+    position: relative;
+    overflow: hidden;
+    .lateral-img {
+      position: absolute;
+      width : 500px;
+      img {
+        width: 100%;
+      }
+    }
+    .leftImg {
+      left : -3%;
+    }
+    .rightImg {
+      right : -5%;
+      img {
+        transform : rotate(45deg);
+      }
+    }
+    .titleContainer {
+      margin-bottom : 30px;
+      position : absolute;
+      text-align: center;
+      top: 60px;
+      left : 50%;
+      transform: translateX(-50%);
+      .title {
+        text-transform: uppercase;
+        color : #aa9773;
+        font-size : 30px;
+      }
+      .subTitle {
+        text-transform : capitalize;
+        color : #000;
+        font-size : 35px;
+      }
+    }
+    .img-welcome {
+      position : absolute;
+      bottom : 40%;
+      width : 100%;
+      display: flex;
+      justify-content: center;
+      img {
+        width : 300px;
+      }
+    }
 
-}
+  }
+  
+}//end main home
+
+
 //style of all products section
 @mixin main-products {
   @include macroSectionWidth;
@@ -34,7 +94,7 @@
       }
     }
   }//end all-products-container
-};
+} //end main-products
 
 //style of slected product and details
 @mixin main-productDetails {
