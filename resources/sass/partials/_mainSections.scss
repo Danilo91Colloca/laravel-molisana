@@ -159,3 +159,14 @@
     }
   }
 } //main-productDetails
+
+@mixin main-news {
+  position: relative;
+  .imgcontainer {
+    max-width: 100%;
+    img {
+      width : 100%;
+    }
+  }
+
+}

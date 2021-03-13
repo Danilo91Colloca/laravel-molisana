@@ -1,4 +1,8 @@
 @extends('layoutMaster')
 @section('main')
-<h1>sezione news in lavorazione</h1>
+<div class="main-news">
+  <div class="imgcontainer">
+    <img src="/img/workinprogress.jpeg" alt="">
+  </div>
+</div>
 @endsection
