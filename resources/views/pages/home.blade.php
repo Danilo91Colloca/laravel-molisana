@@ -18,7 +18,7 @@
           <span>capsule collection</span>
         </div>
       </div>
-      <div class="img-welcome">
+      <div class="img-plate">
         <img src="/img/piatto-toro-1.png" alt="">
         <img src="/img/piatto-cancro-1.png" alt="">
         <img src="/img/piatto-leone-1.png" alt="">

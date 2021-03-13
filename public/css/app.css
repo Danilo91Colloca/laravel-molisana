@@ -129,6 +129,7 @@ a {
   background-image: url("/img/ruota_oro.jpeg");
   background-repeat: no-repeat;
   background-position: center;
+  background-size: contain;
 }
 #app .main-container .main-home .wrapper-opacizer {
   width: 100%;
@@ -139,13 +140,29 @@ a {
 }
 #app .main-container .main-home .wrapper-opacizer .lateral-img {
   position: absolute;
-  width: 500px;
+  width: 400px;
+  opacity: 0.8;
+}
+@media screen and (max-width: 1199px) {
+  #app .main-container .main-home .wrapper-opacizer .lateral-img {
+    width: 300px;
+  }
+}
+@media screen and (max-width: 991px) {
+  #app .main-container .main-home .wrapper-opacizer .lateral-img {
+    width: 190px;
+  }
+}
+@media screen and (max-width: 767px) {
+  #app .main-container .main-home .wrapper-opacizer .lateral-img {
+    width: 180px;
+  }
 }
 #app .main-container .main-home .wrapper-opacizer .lateral-img img {
   width: 100%;
 }
 #app .main-container .main-home .wrapper-opacizer .leftImg {
-  left: -3%;
+  left: -8%;
 }
 #app .main-container .main-home .wrapper-opacizer .rightImg {
   right: -5%;
@@ -164,22 +181,67 @@ a {
 #app .main-container .main-home .wrapper-opacizer .titleContainer .title {
   text-transform: uppercase;
   color: #aa9773;
-  font-size: 30px;
+  font-size: 18px;
+}
+@media screen and (max-width: 1199px) {
+  #app .main-container .main-home .wrapper-opacizer .titleContainer .title {
+    font-size: 18px;
+  }
+}
+@media screen and (max-width: 991px) {
+  #app .main-container .main-home .wrapper-opacizer .titleContainer .title {
+    font-size: 12px;
+  }
+}
+@media screen and (max-width: 767px) {
+  #app .main-container .main-home .wrapper-opacizer .titleContainer .title {
+    font-size: 8px;
+  }
 }
 #app .main-container .main-home .wrapper-opacizer .titleContainer .subTitle {
   text-transform: capitalize;
   color: #000;
   font-size: 35px;
 }
-#app .main-container .main-home .wrapper-opacizer .img-welcome {
+@media screen and (max-width: 1199px) {
+  #app .main-container .main-home .wrapper-opacizer .titleContainer .subTitle {
+    font-size: 25px;
+  }
+}
+@media screen and (max-width: 991px) {
+  #app .main-container .main-home .wrapper-opacizer .titleContainer .subTitle {
+    font-size: 23px;
+  }
+}
+@media screen and (max-width: 767px) {
+  #app .main-container .main-home .wrapper-opacizer .titleContainer .subTitle {
+    font-size: 18px;
+  }
+}
+#app .main-container .main-home .wrapper-opacizer .img-plate {
   position: absolute;
   bottom: 40%;
   width: 100%;
   display: flex;
   justify-content: center;
 }
-#app .main-container .main-home .wrapper-opacizer .img-welcome img {
+#app .main-container .main-home .wrapper-opacizer .img-plate img {
   width: 300px;
+}
+@media screen and (max-width: 1199px) {
+  #app .main-container .main-home .wrapper-opacizer .img-plate img {
+    width: 250px;
+  }
+}
+@media screen and (max-width: 991px) {
+  #app .main-container .main-home .wrapper-opacizer .img-plate img {
+    width: 200px;
+  }
+}
+@media screen and (max-width: 767px) {
+  #app .main-container .main-home .wrapper-opacizer .img-plate img {
+    width: 150px;
+  }
 }
 #app .main-container .main-products {
   display: flex;

@@ -26,6 +26,7 @@
     min-width: 577px;
   }
 }
+//--------------
 
 @mixin large-chevronResize {
   @media screen and (max-width: 1199px) {
@@ -36,6 +37,28 @@
 @mixin large-sectionDetails {
   @media screen and (max-width: 1199px) {
     width: calc(100% - 200px);
+  }
+}
+
+@mixin large-lateralImgHome {
+  @media screen and (max-width: 1199px) {
+    width : 300px;
+   
+  }
+}
+@mixin large-imgPlateResize{
+  @media screen and (max-width: 1199px) {
+    width : 250px
+  }
+}
+@mixin large-titleHome{
+  @media screen and (max-width: 1199px) {
+    font-size: 18px;
+  }
+}
+@mixin large-subTitleHome{
+  @media screen and (max-width: 1199px) {
+    font-size: 25px;
   }
 }
 /*>>>>>>>>>>>>>>>MEDIUM SECTION<<<<<<<<<<<<<<<<<<<<<<*/
@@ -96,7 +119,28 @@
     max-width: calc(100%-160px);
   }
 }
+@mixin medium-lateralImgHome {
+  @media screen and (max-width: 991px) {
+    width : 190px;
+   
+  }
+}
 
+@mixin medium-imgPlateResize{
+  @media screen and (max-width: 991px) {
+    width : 200px;
+  }
+}
+@mixin medium-titleHome{
+  @media screen and (max-width: 991px) {
+    font-size: 12px;
+  }
+}
+@mixin medium-subTitleHome{
+  @media screen and (max-width: 991px) {
+    font-size: 23px;
+  }
+}
 /*>>>>>>>>>>>>>>>SMALL SECTION<<<<<<<<<<<<<<<<<<<<<<*/
 
 
@@ -139,6 +183,29 @@
     width : calc(100% - 90px)
   }
 }
+@mixin small-lateralImgHome {
+  @media screen and (max-width: 767px) {
+    width : 180px;
+   
+  }
+}
+
+@mixin small-imgPlateResize{
+  @media screen and (max-width: 767px) {
+    width : 150px;
+  }
+}
+@mixin small-titleHome{
+  @media screen and (max-width: 767px) {
+    font-size: 8px;
+  }
+}
+@mixin small-subTitleHome{
+  @media screen and (max-width: 767px) {
+    font-size: 18px;
+  }
+}
+
 
 
 
